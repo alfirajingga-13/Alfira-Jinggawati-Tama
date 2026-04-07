@@ -3,30 +3,41 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Home - Portfolio Saya</title>
-    <link rel="stylesheet" href="css/style.css">
+    <title>Home - Website Saya</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        body { font-family: system-ui, sans-serif; }
+        .hero { background: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)), url('https://picsum.photos/id/1015/1920/1080') center/cover; }
+    </style>
 </head>
-<body>
-    <header>
-        <nav>
-            <div class="logo">Portfolio</div>
-            <ul>
-                <li><a href="index.html" class="active">Home</a></li>
-                <li><a href="biodata.html">Biodata</a></li>
-                <li><a href="galeri-foto.html">Galeri Foto</a></li>
-                <li><a href="galeri-video.html">Galeri Video</a></li>
-            </ul>
-        </nav>
-    </header>
+<body class="bg-gray-50 text-gray-800">
+    <!-- Navbar -->
+    <nav class="bg-white shadow-md sticky top-0 z-50">
+        <div class="max-w-6xl mx-auto px-6 py-4 flex justify-between items-center">
+            <h1 class="text-2xl font-bold text-indigo-600">Website Saya</h1>
+            <div class="space-x-8 text-lg">
+                <a href="../home/index.html" class="hover:text-indigo-600 font-medium">Home</a>
+                <a href="../biodata/index.html" class="hover:text-indigo-600">Biodata</a>
+                <a href="../galeri-foto/index.html" class="hover:text-indigo-600">Galeri Foto</a>
+                <a href="../galeri-video/index.html" class="hover:text-indigo-600">Galeri Video</a>
+            </div>
+        </div>
+    </nav>
 
-    <section class="hero">
-        <h1>Selamat Datang di Portfolio Saya</h1>
-        <p>Halo! Saya Alfira Jinggawati Tama [Mahasiswi Universitas Lambung Mangkurat Fakultas Perikanan dan Ilmu Kelautan Program Studi Sosial Ekonomi Perikanan Semester 6], suka Memasak, Bermain Game, dan Belajar.</p>
-        <a href="biodata.html" class="btn">Kenali Saya Lebih Lanjut</a>
+    <!-- Hero -->
+    <section class="hero h-screen flex items-center justify-center text-white text-center">
+        <div>
+            <h2 class="text-5xl font-bold mb-4">Selamat Datang di Website Saya</h2>
+            <p class="text-xl mb-8">Temukan lebih banyak tentang saya melalui biodata, foto, dan video.</p>
+            <a href="../biodata/index.html" 
+               class="bg-indigo-600 hover:bg-indigo-700 px-8 py-4 rounded-full text-lg font-semibold inline-block transition">
+                Lihat Biodata Saya
+            </a>
+        </div>
     </section>
 
-    <footer>
-        <p>&copy; 2026 Portfolio Saya. All Rights Reserved.</p>
+    <footer class="bg-gray-900 text-white py-8 text-center">
+        <p>&copy; 2026 Website Saya. Dibuat dengan Alfira Jinggawati Tama ❤️</p>
     </footer>
 </body>
 </html>
