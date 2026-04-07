@@ -3,38 +3,45 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Biodata - Portfolio Alfira Jinggawati Tama</title>
-    <link rel="stylesheet" href="css/style.css">
+    <title>Biodata - Website Alfira Jingga</title>
+    <script src="https://cdn.tailwindcss.com"></script>
 </head>
-<body>
-    <header>
-        <nav>
-            <div class="logo">Portfolio</div>
-            <ul>
-                <li><a href="index.html">Home</a></li>
-                <li><a href="biodata.html" class="active">Biodata</a></li>
-                <li><a href="galeri-foto.html">Galeri Foto</a></li>
-                <li><a href="galeri-video.html">Galeri Video</a></li>
-            </ul>
-        </nav>
-    </header>
-
-    <section class="biodata">
-        <h1>Biodata Saya</h1>
-        <div class="bio-content">
-            <img src="images/foto-profil.jpg" alt="Foto Profil" class="profil">
-            <div>
-                <h2>Nama: [Nama Anda]</h2>
-                <p><strong>Profesi:</strong> [Mahasiswi Universitas Lambung Mangkurat Fakutas Perikanan dan Ilmu Kelautan Program Studi Sosial Ekonomi Perikanan NIM 2310715220011]</p>
-                <p><strong>Tempat Tanggal Lahir:</strong> [Sampit, 13 Juli 2005]</p>
-                <p><strong>Email:</strong> alfirajingga5@email.com</p>
-                <p>Saya passion di bidang memasak, dan bermain game. Saya suka menangkap momen indah dan membuat konten kreatif.</p>
+<body class="bg-gray-50">
+    <nav class="bg-white shadow-md sticky top-0 z-50">
+        <div class="max-w-6xl mx-auto px-6 py-4 flex justify-between items-center">
+            <h1 class="text-2xl font-bold text-indigo-600">Website Saya</h1>
+            <div class="space-x-8 text-lg">
+                <a href="../home/index.html" class="hover:text-indigo-600">Home</a>
+                <a href="../biodata/index.html" class="text-indigo-600 font-medium">Biodata</a>
+                <a href="../galeri-foto/index.html" class="hover:text-indigo-600">Galeri Foto</a>
+                <a href="../galeri-video/index.html" class="hover:text-indigo-600">Galeri Video</a>
             </div>
         </div>
-    </section>
+    </nav>
 
-    <footer>
-        <p>&copy; 2026 Portfolio Alfira Jinggawati Tama.</p>
+    <div class="max-w-4xl mx-auto px-6 py-12">
+        <h2 class="text-4xl font-bold mb-8 text-center">Biodata Saya</h2>
+        
+        <div class="bg-white rounded-2xl shadow-xl p-10">
+            <div class="flex flex-col md:flex-row gap-10 items-center">
+                <img src="https://picsum.photos/id/64/300/300" alt="Foto Saya" 
+                     class="w-64 h-64 rounded-2xl object-cover shadow-lg">
+                
+                <div class="space-y-4 text-lg">
+                    <p><strong>Nama:</strong> Alfira Jinggawati Tama</p>
+                    <p><strong>Tempat Tinggal:</strong> Banjarbaru, Kalimantan Selatan</p>
+                    <p><strong>Pekerjaan/Hobi:</strong> Mahasiswi Universitas Lambung Mangkurat Fakultas Perikanan dan Ilmu Kelautan Program Studi Sosial Ekonomi Perikanan NIM 2310715220011 Semester 6 </p>
+                    <p><strong>Tentang Saya:</strong><br>
+                       Saya suka bermain game yang beredukasi untuk sekaligus belajar melalui handphone, saya suka memasak dan travelling  
+                       Website ini dibuat untuk berbagi momen dan informasi tentang saya.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <footer class="bg-gray-900 text-white py-8 text-center">
+        <p>&copy; 2026 Website Alfira Jingga</p>
     </footer>
 </body>
 </html>
